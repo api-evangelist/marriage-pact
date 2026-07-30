@@ -1,8 +1,23 @@
 aid: marriage-pact
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/marriage-pact.png
 name: Marriage Pact
-description: Marriage Pact is a company surfaced as a portfolio company of bain-capital-ventures and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Marriage Pact is a matchmaking platform that pairs people using a research-backed
+  compatibility questionnaire, originally built for college campuses and run as periodic
+  matching events across universities. Participants answer a values-and-preferences survey and the
+  service uses the responses to compute and deliver each person their most compatible match. Backed
+  by Bain Capital Ventures, the company operates as a consumer web product; as of this profile it
+  publishes no public developer API, documentation portal, or programmatic integration surface.
 url: https://raw.githubusercontent.com/api-evangelist/marriage-pact/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Matchmaking
+- Dating
+- Consumer
+- Compatibility
+- Questionnaire
+- Higher Education
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +43,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/marriage-pact-domain-security.yml
 - type: Website
   url: https://marriagepact.com/
+- type: TermsOfService
+  url: https://marriagepact.com/terms
+- type: PrivacyPolicy
+  url: https://marriagepact.com/privacy
+- type: Support
+  url: mailto:hello@marriagepact.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
